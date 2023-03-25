@@ -1,0 +1,93 @@
+:root {
+    --main: #333;
+    --secondary: #ddd;
+
+    --border: #555;
+    --border-dark: #272727;
+    --items: #ff8080;
+    --container: #57bcdb;
+
+    --h1: 2.4rem;
+    --h2: 1.8rem;
+    --h3: 1.6rem;
+    --h4: 1.3rem;
+    --nm: 1rem;
+    --sm: .8rem;
+    --xsm: .5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main);
+    color: var(--secondary);
+    font-family: Verdana, Geneva, sans-serif;
+    display: felx;
+    flex-wrap: wrap;
+}
+
+#grid_container_properties{
+    margin: 1.5rem;
+}
+
+.controls{
+    padding: .5rem 0;
+    font-size: 14pt;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.controls div{
+   margin: .5rem .5rem .5rem 0;
+}
+
+.grid_container {
+    display: grid;
+    height: 100%;
+    width: 50vw;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border);
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#align_content .item, #grid_template_container{
+    height: auto;
+}
+
+#align_items .item, #justify_items .item{
+    height: auto;
+    width: auto;
+}
+
+input:checked + label {
+    color: #2a80b9;
+}
+
+input[type="number"]{
+    width: 5rem;
+    padding: .5rem;
+    background-color: rgb(38, 38, 38);
+    color: var(--secondary);
+    outline: none;
+    border: none;
+}
+
+.blue{background-color: #2a80b9;}
+.purple{background-color: #a44fb3;}
+.teal{background-color: #00b3a4;}
+.yellow{background-color: #f2c94c;}
+.orange{background-color: #f2994a;}

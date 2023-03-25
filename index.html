@@ -1,0 +1,232 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Gridify</title>
+    </head>
+
+    <body>
+        <div id="grid_container_properties">
+            <h1>Properties for the grid container</h1>
+            <div id="align_content">
+                <h2>align-content</h2>
+                <div class="controls">
+                    <div>
+                        <input type="radio" name="align-content" id="align-content-center" value="center" />
+                        <label for="align-content-center">center</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-content" id="align-content-space-between"
+                            value="space-between" />
+                        <label for="align-content-space-between">space-between</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-content" id="align-content-space-around" value="space-around" />
+                        <label for="align-content-space-around">space-around</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-content" id="align-content-space-evenly" value="space-evenly" />
+                        <label for="align-content-space-evenly">space-evenly</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-content" id="align-content-stretch" value="stretch" checked />
+                        <label for="align-content-stretch">stretch</label>
+                    </div>
+                </div>
+                <div class="grid_container" id="align_content_container">
+                    <div class="item blue">
+                        <p>1</p>
+                    </div>
+                    <div class="item purple">
+                        <p>2</p>
+                    </div>
+                    <div class="item teal">
+                        <p>3</p>
+                    </div>
+                    <div class="item yellow">
+                        <p>4</p>
+                    </div>
+                    <div class="item orange">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div id="justify_content">
+                <h2>justify-content</h2>
+                <div class="controls">
+                    <div>
+                        <input type="radio" name="justify-content" id="justify-content-center" value="center" />
+                        <label for="justify-content-center">center</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-content" id="justify-content-start" value="start" checked />
+                        <label for="justify-content-start">start</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-content" id="justify-content-space-between"
+                            value="space-between" />
+                        <label for="justify-content-space-between">space-between</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-content" id="justify-content-space-around"
+                            value="space-around" />
+                        <label for="justify-content-space-around">space-around</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-content" id="justify-content-space-evenly"
+                            value="space-evenly" />
+                        <label for="justify-content-space-evenly">space-evenly</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-content" id="justify-content-end" value="end" />
+                        <label for="justify-content-end">end</label>
+                    </div>
+                </div>
+                <div class="grid_container" id="justify_content_container">
+                    <div class="item blue">
+                        <p>1</p>
+                    </div>
+                    <div class="item purple">
+                        <p>2</p>
+                    </div>
+                    <div class="item teal">
+                        <p>3</p>
+                    </div>
+                    <div class="item yellow">
+                        <p>4</p>
+                    </div>
+                    <div class="item orange">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div id="align_items">
+                <h2>align-items</h2>
+                <div class="controls">
+                    <div>
+                        <input type="radio" name="align-items" id="align-items-center" value="center" />
+                        <label for="align-items-center">center</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-items" id="align-items-start"
+                            value="start" />
+                        <label for="align-items-start">start</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-items" id="align-items-end" value="end" />
+                        <label for="align-items-end">end</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-items" id="align-items-baseline" value="baseline" />
+                        <label for="align-items-baseline">baseline</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-items" id="align-items-stretch" value="stretch" checked />
+                        <label for="align-items-stretch">stretch</label>
+                    </div>
+                </div>
+                <div class="grid_container" id="align_items_container">
+                    <div class="item blue">
+                        <p>1</p>
+                    </div>
+                    <div class="item purple">
+                        <p>2</p>
+                    </div>
+                    <div class="item teal">
+                        <p>3</p>
+                    </div>
+                    <div class="item yellow">
+                        <p>4</p>
+                    </div>
+                    <div class="item orange">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div id="justify_items">
+                <h2>justify-items</h2>
+                <div class="controls">
+                    <div>
+                        <input type="radio" name="justify-items" id="justify-items-center" value="center" />
+                        <label for="justify-items-center">center</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-items" id="justify-items-start" value="start" />
+                        <label for="justify-items-start">start</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-items" id="justify-items-stretch"
+                            value="stretch" checked/>
+                        <label for="justify-items-stretch">stretch</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-items" id="justify-items-end" value="end" />
+                        <label for="justify-items-end">end</label>
+                    </div>
+                </div>
+                <div class="grid_container" id="justify_items_container">
+                    <div class="item blue">
+                        <p>1</p>
+                    </div>
+                    <div class="item purple">
+                        <p>2</p>
+                    </div>
+                    <div class="item teal" style="font-size: 48pt;">
+                        <p>3</p>
+                    </div>
+                    <div class="item yellow">
+                        <p>4</p>
+                    </div>
+                    <div class="item orange">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div id="grid_template_column">
+                <h1>Grid template rows/columns</h1>
+                <p>Set the value inside these inputs or leave empty</p>
+                <div class="controls">
+                    grid-template-columns: 
+                    <div><input type="number" class="grid_template_col"></div>
+                    <div><input type="number" class="grid_template_col"></div>
+                    <div><input type="number" class="grid_template_col"></div>
+                    <div><input type="number" class="grid_template_col"></div>
+                    <div><input type="number" class="grid_template_col"></div>;
+                </div>
+                <div class="controls">
+                    grid-template-rows: 
+                    <div><input type="number" class="grid_template_row"></div>
+                    <div><input type="number" class="grid_template_row"></div>
+                    <div><input type="number" class="grid_template_row"></div>
+                    <div><input type="number" class="grid_template_row"></div>
+                    <div><input type="number" class="grid_template_row"></div>;
+                </div>
+                <div class="grid_container" id="grid_template_container">
+                    <div class="item blue">
+                        <p>1</p>
+                    </div>
+                    <div class="item purple">
+                        <p>2</p>
+                    </div>
+                    <div class="item teal">
+                        <p>3</p>
+                    </div>
+                    <div class="item yellow">
+                        <p>4</p>
+                    </div>
+                    <div class="item orange">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="grid_items_properties">
+            <h1>Properties for grid items</h1>
+        </div>
+    </body>
+
+</html>
