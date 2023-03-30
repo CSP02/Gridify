@@ -14,6 +14,31 @@ window.onload = () => {
     const templateColControls = document.getElementsByClassName('grid_template_col');
     const templateRowControls = document.getElementsByClassName('grid_template_row');
     const templateContainer = document.getElementById('grid_template_container');
+    const gridColGap = document.getElementById('grid_column_gap');
+    const gridRowGap = document.getElementById('grid_row_gap');
+    const gridGap = document.getElementById('grid_gap');
+    const gridTemAreasUserIn = document.getElementById('grid_template_areas_user_in');
+    const gridTempAreasContainer = document.getElementById('grid_template_areas_container');
+
+    gridTemAreasUserIn.value = 'blue blue blue blue purple\nteal teal teal yellow yellow\nteal teal teal yellow yellow\norange orange orange orange orange'
+    gridColGap.addEventListener('change', (event) => {
+        templateContainer.style.columnGap = event.target.value + 'px';
+    });
+
+    gridRowGap.addEventListener('change', (event) => {
+        templateContainer.style.rowGap = event.target.value + 'px';
+    })
+
+    gridGap.addEventListener('change', (event) => {
+        templateContainer.style.gap = event.target.value + 'px';
+    });
+
+    gridTemAreasUserIn.addEventListener('input', (event) => {
+        gridTempAreasContainer.style.gridTemplateAreas = "";
+        event.target.value.split('\n').forEach( line => {
+            gridTempAreasContainer.style.gridTemplateAreas += `"${line}"`;
+        })
+    });
 
     for (let i = 0; i < alignContentControls.length; i++) {
         alignContentControls[i].addEventListener('change', (event) => {

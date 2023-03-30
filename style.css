@@ -26,15 +26,21 @@ body {
     background-color: var(--main);
     color: var(--secondary);
     font-family: Verdana, Geneva, sans-serif;
-    display: felx;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#grid_container_properties{
+p{
+    padding: .5rem 0;
+}
+
+#grid_container_properties, #grid_items_properties {
     margin: 1.5rem;
+    width: 45vw;
 }
 
-.controls{
+.controls {
     padding: .5rem 0;
     font-size: 14pt;
     display: flex;
@@ -42,14 +48,14 @@ body {
     align-items: center;
 }
 
-.controls div{
-   margin: .5rem .5rem .5rem 0;
+.controls div {
+    margin: .5rem .5rem .5rem 0;
 }
 
 .grid_container {
     display: grid;
-    height: 100%;
-    width: 50vw;
+    height: 600px;
+    width: 40vw;
     padding: 1rem;
     margin: 1rem 0;
     border: 1px solid var(--border);
@@ -64,30 +70,75 @@ body {
     justify-content: center;
 }
 
-#align_content .item, #grid_template_container{
+#align_content .item,
+#grid_template_container {
     height: auto;
 }
 
-#align_items .item, #justify_items .item{
+#align_items .item,
+#justify_items .item {
     height: auto;
     width: auto;
 }
 
-input:checked + label {
+input:checked+label {
     color: #2a80b9;
 }
 
-input[type="number"]{
+input[type="number"] {
     width: 5rem;
     padding: .5rem;
     background-color: rgb(38, 38, 38);
     color: var(--secondary);
     outline: none;
-    border: none;
+    border: 1px solid var(--border);
 }
 
-.blue{background-color: #2a80b9;}
-.purple{background-color: #a44fb3;}
-.teal{background-color: #00b3a4;}
-.yellow{background-color: #f2c94c;}
-.orange{background-color: #f2994a;}
+.container {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-areas:
+        'blue blue blue blue purple'
+        'teal teal teal yellow yellow'
+        'teal teal teal yellow yellow'
+        'orange orange orange orange orange';
+}
+
+#grid_template_areas_user_in{
+    height: 200px;
+    width: 500px;
+    overflow: scroll;
+    font-size: 14pt;
+    color: var(--secondary);
+    padding: 1rem;
+    background-color: #383838;
+}
+input, textarea{
+    border-radius: .5rem;
+}
+
+input:focus, textarea:focus, input:hover, textarea:hover{
+    outline: none;
+    border: 1px solid var(--container);
+}
+
+.blue {
+    background-color: #2a80b9;
+}
+
+.purple {
+    background-color: #a44fb3;
+}
+
+.teal {
+    background-color: #00b3a4;
+}
+
+.yellow {
+    background-color: #f2c94c;
+}
+
+.orange {
+    background-color: #f2994a;
+}

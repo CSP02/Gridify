@@ -112,8 +112,7 @@
                         <label for="align-items-center">center</label>
                     </div>
                     <div>
-                        <input type="radio" name="align-items" id="align-items-start"
-                            value="start" />
+                        <input type="radio" name="align-items" id="align-items-start" value="start" />
                         <label for="align-items-start">start</label>
                     </div>
                     <div>
@@ -159,8 +158,7 @@
                         <label for="justify-items-start">start</label>
                     </div>
                     <div>
-                        <input type="radio" name="justify-items" id="justify-items-stretch"
-                            value="stretch" checked/>
+                        <input type="radio" name="justify-items" id="justify-items-stretch" value="stretch" checked />
                         <label for="justify-items-stretch">stretch</label>
                     </div>
                     <div>
@@ -190,20 +188,32 @@
                 <h1>Grid template rows/columns</h1>
                 <p>Set the value inside these inputs or leave empty</p>
                 <div class="controls">
-                    grid-template-columns: 
-                    <div><input type="number" class="grid_template_col"></div>
-                    <div><input type="number" class="grid_template_col"></div>
-                    <div><input type="number" class="grid_template_col"></div>
-                    <div><input type="number" class="grid_template_col"></div>
-                    <div><input type="number" class="grid_template_col"></div>;
+                    grid-template-columns:
+                    <div><input type="number" class="grid_template_col">px</div>
+                    <div><input type="number" class="grid_template_col">px</div>
+                    <div><input type="number" class="grid_template_col">px</div>
+                    <div><input type="number" class="grid_template_col">px</div>
+                    <div><input type="number" class="grid_template_col">px;</div>
                 </div>
                 <div class="controls">
-                    grid-template-rows: 
-                    <div><input type="number" class="grid_template_row"></div>
-                    <div><input type="number" class="grid_template_row"></div>
-                    <div><input type="number" class="grid_template_row"></div>
-                    <div><input type="number" class="grid_template_row"></div>
-                    <div><input type="number" class="grid_template_row"></div>;
+                    grid-template-rows:
+                    <div><input type="number" class="grid_template_row">px</div>
+                    <div><input type="number" class="grid_template_row">px</div>
+                    <div><input type="number" class="grid_template_row">px</div>
+                    <div><input type="number" class="grid_template_row">px</div>
+                    <div><input type="number" class="grid_template_row">px;</div>
+                </div>
+                <div class="controls">
+                    gap:
+                    <div><input type="number" id="grid_gap">px;</div>
+                </div>
+                <div class="controls">
+                    column-gap:
+                    <div><input type="number" id="grid_column_gap">px;</div>
+                </div>
+                <div class="controls">
+                    row-gap:
+                    <div><input type="number" id="grid_row_gap">px;</div>
                 </div>
                 <div class="grid_container" id="grid_template_container">
                     <div class="item blue">
@@ -223,9 +233,56 @@
                     </div>
                 </div>
             </div>
+            <div id="grid_template_area">
+                <h1>Grid-template-areas</h1>
+                <p>Type the grid areas in the textarea below. Use the colors of boxes below i.e. blue, purple, teal, yellow and orange</p>
+                <div class="controls">
+                    <textarea name="Grid-template-areas" id="grid_template_areas_user_in"></textarea>
+                </div>
+                <div class="grid_container container" id="grid_template_areas_container">
+                    <div class="item blue" style="grid-area: blue;width: 100%;height: 100%;">
+                        <p>1</p>
+                    </div>
+                    <div class="item purple" style="grid-area: purple;width: 100%;height: 100%;">
+                        <p>2</p>
+                    </div>
+                    <div class="item teal" style="grid-area: teal;width: 100%;height: 100%;">
+                        <p>3</p>
+                    </div>
+                    <div class="item yellow" style="grid-area: yellow;width: 100%;height: 100%;">
+                        <p>4</p>
+                    </div>
+                    <div class="item orange" style="grid-area: orange;width: 100%;height: 100%;">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="grid_items_properties">
             <h1>Properties for grid items</h1>
+            <div id="grid_template_area">
+                <h1>Grid-template-areas</h1>
+                <p>Type the grid areas in the textarea below. Use the colors of boxes below i.e. blue, purple, teal, yellow and orange</p>
+                <div class="controls">
+                </div>
+                <div class="grid_container container" id="">
+                    <div class="item blue">
+                        <p>1</p>
+                    </div>
+                    <div class="item purple">
+                        <p>2</p>
+                    </div>
+                    <div class="item teal">
+                        <p>3</p>
+                    </div>
+                    <div class="item yellow">
+                        <p>4</p>
+                    </div>
+                    <div class="item orange">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 
