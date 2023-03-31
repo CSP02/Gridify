@@ -31,11 +31,12 @@ body {
     justify-content: space-between;
 }
 
-p{
+p {
     padding: .5rem 0;
 }
 
-#grid_container_properties, #grid_items_properties {
+#grid_container_properties,
+#grid_items_properties {
     margin: 1.5rem;
     width: 45vw;
 }
@@ -105,7 +106,7 @@ input[type="number"] {
         'orange orange orange orange orange';
 }
 
-#grid_template_areas_user_in{
+#grid_template_areas_user_in {
     height: 200px;
     width: 500px;
     overflow: scroll;
@@ -114,13 +115,30 @@ input[type="number"] {
     padding: 1rem;
     background-color: #383838;
 }
-input, textarea{
+
+input,
+textarea {
     border-radius: .5rem;
 }
 
-input:focus, textarea:focus, input:hover, textarea:hover{
+input:focus,
+textarea:focus,
+input:hover,
+textarea:hover {
     outline: none;
     border: 1px solid var(--container);
+}
+
+#grid_items_properties .item {
+    height: auto;
+}
+
+#grid_items_properties .teal {
+    font-size: 22pt;
+}
+
+#grid_justify_self .teal{
+    width: auto;
 }
 
 .blue {

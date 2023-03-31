@@ -19,6 +19,10 @@ window.onload = () => {
     const gridGap = document.getElementById('grid_gap');
     const gridTemAreasUserIn = document.getElementById('grid_template_areas_user_in');
     const gridTempAreasContainer = document.getElementById('grid_template_areas_container');
+    const justifySelf = document.getElementById('grid_justify_self');
+    const justifySelfControls = justifySelf.getElementsByTagName('input');
+    const alignSelf = document.getElementById('grid_align_self');
+    const alignSelfControls = alignSelf.getElementsByTagName('input');
 
     gridTemAreasUserIn.value = 'blue blue blue blue purple\nteal teal teal yellow yellow\nteal teal teal yellow yellow\norange orange orange orange orange'
     gridColGap.addEventListener('change', (event) => {
@@ -35,7 +39,7 @@ window.onload = () => {
 
     gridTemAreasUserIn.addEventListener('input', (event) => {
         gridTempAreasContainer.style.gridTemplateAreas = "";
-        event.target.value.split('\n').forEach( line => {
+        event.target.value.split('\n').forEach(line => {
             gridTempAreasContainer.style.gridTemplateAreas += `"${line}"`;
         })
     });
@@ -65,7 +69,19 @@ window.onload = () => {
         });
     }
 
-    for(let i = 0; i < templateColControls.length; i++) {
+    for (let i = 0; i < justifySelfControls.length; i++) {
+        justifySelfControls[i].addEventListener('change', (event) => {
+            justifySelf.getElementsByClassName("teal")[0].style.justifySelf = event.target.value;
+        });
+    }
+
+    for (let i = 0; i < alignSelfControls.length; i++) {
+        alignSelfControls[i].addEventListener('change', (event) => {
+            alignSelf.getElementsByClassName("teal")[0].style.alignSelf = event.target.value;
+        });
+    }
+
+    for (let i = 0; i < templateColControls.length; i++) {
         templateColControls[i].addEventListener('change', (event) => {
             let Col1 = templateColControls[0].value ? templateColControls[0].value + 'px' : '';
             let Col2 = templateColControls[1].value ? templateColControls[1].value + 'px' : '';
@@ -76,7 +92,7 @@ window.onload = () => {
         });
     }
 
-    for(let i = 0; i < templateRowControls.length; i++) {
+    for (let i = 0; i < templateRowControls.length; i++) {
         templateRowControls[i].addEventListener('change', (event) => {
             let Row1 = templateRowControls[0].value ? templateRowControls[0].value + 'px' : '';
             let Row2 = templateRowControls[1].value ? templateRowControls[1].value + 'px' : '';

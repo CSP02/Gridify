@@ -260,12 +260,65 @@
         </div>
         <div id="grid_items_properties">
             <h1>Properties for grid items</h1>
-            <div id="grid_template_area">
-                <h1>Grid-template-areas</h1>
-                <p>Type the grid areas in the textarea below. Use the colors of boxes below i.e. blue, purple, teal, yellow and orange</p>
+            <div id="grid_justify_self">
+                <h2>justify-self</h2>
                 <div class="controls">
+                    <div>
+                        <input type="radio" name="justify-self" id="justify-self-center" value="center" />
+                        <label for="justify-self-center">center</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-self" id="justify-self-start" value="start" />
+                        <label for="justify-self-start">start</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-self" id="justify-self-end" value="end" />
+                        <label for="justify-self-end">end</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="justify-self" id="justify-self-stretch" value="stretch" checked/>
+                        <label for="justify-self-stretch">stretch</label>
+                    </div>
                 </div>
-                <div class="grid_container container" id="">
+                <div class="grid_container" id="">
+                    <div class="item blue">
+                        <p>1</p>
+                    </div>
+                    <div class="item purple">
+                        <p>2</p>
+                    </div>
+                    <div class="item teal">
+                        <p>3</p>
+                    </div>
+                    <div class="item yellow">
+                        <p>4</p>
+                    </div>
+                    <div class="item orange">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div id="grid_align_self">
+                <h2>align-self</h2>
+                <div class="controls">
+                    <div>
+                        <input type="radio" name="align-self" id="align-self-center" value="center" />
+                        <label for="align-self-center">center</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-self" id="align-self-start" value="start"/>
+                        <label for="align-self-start">start</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-self" id="align-self-end" value="end" />
+                        <label for="align-self-end">end</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="align-self" id="align-self-stretch" value="stretch" checked/>
+                        <label for="align-self-stretch">stretch</label>
+                    </div>
+                </div>
+                <div class="grid_container" id="">
                     <div class="item blue">
                         <p>1</p>
                     </div>
