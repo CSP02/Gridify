@@ -86,8 +86,7 @@ input:checked+label {
     color: #2a80b9;
 }
 
-input[type="number"],
-input[type="text"] {
+input[type="number"], input[type="text"] {
     width: 3rem;
     padding: .5rem;
     margin: .2rem;
