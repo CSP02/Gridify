@@ -86,13 +86,19 @@ input:checked+label {
     color: #2a80b9;
 }
 
-input[type="number"] {
-    width: 5rem;
+input[type="number"],
+input[type="text"] {
+    width: 3rem;
     padding: .5rem;
+    margin: .2rem;
     background-color: rgb(38, 38, 38);
     color: var(--secondary);
     outline: none;
     border: 1px solid var(--border);
+}
+
+#grid_area_eq {
+    width: fit-content;
 }
 
 .container {
@@ -137,8 +143,25 @@ textarea:hover {
     font-size: 22pt;
 }
 
-#grid_justify_self .teal{
+#grid_justify_self .teal {
     width: auto;
+}
+
+#grid_column_row_start_end section{
+    display: grid;
+}
+
+#grid_column_row_start_end .item {
+    width: auto;
+    height: auto;
+}
+
+#grid_column_row_start_end .grid_container .teal {
+    width: auto;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
 }
 
 .blue {

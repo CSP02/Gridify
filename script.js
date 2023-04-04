@@ -23,6 +23,9 @@ window.onload = () => {
     const justifySelfControls = justifySelf.getElementsByTagName('input');
     const alignSelf = document.getElementById('grid_align_self');
     const alignSelfControls = alignSelf.getElementsByTagName('input');
+    const gridColumnRowStartEnd = document.getElementById('grid_column_row_start_end');
+    const gridColumnRowStartEndControls = gridColumnRowStartEnd.getElementsByTagName('input');
+    const gridContainerColRow = document.getElementById('grid_col_row_container');
 
     gridTemAreasUserIn.value = 'blue blue blue blue purple\nteal teal teal yellow yellow\nteal teal teal yellow yellow\norange orange orange orange orange'
     gridColGap.addEventListener('change', (event) => {
@@ -36,6 +39,18 @@ window.onload = () => {
     gridGap.addEventListener('change', (event) => {
         templateContainer.style.gap = event.target.value + 'px';
     });
+
+    for(let i = 0; i < gridColumnRowStartEndControls.length; i++){
+        const control = gridColumnRowStartEndControls[i];
+        const teal = gridContainerColRow.getElementsByClassName('teal')[0];
+        control.addEventListener('change', (event) => {
+            
+            teal.style.setProperty(`${control.id}`, event.target.value)
+            document.getElementById('grid_area_eq').value = teal.style.gridArea ? teal.style.gridArea : '';
+            document.getElementById('grid_col_eq').value = teal.style.gridColumn ? teal.style.gridColumn : '';
+            document.getElementById('grid_row_eq').value = teal.style.gridRow ? teal.style.gridRow : '';
+        })
+    }
 
     gridTemAreasUserIn.addEventListener('input', (event) => {
         gridTempAreasContainer.style.gridTemplateAreas = "";
